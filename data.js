@@ -47,7 +47,15 @@ const DATA_RECIPES = [
     "tags": ["mexican", "vegetarian"],
     "ingredients": ["flour", "sugar", "baking_powder", "chocolate", "eggs", "vanilla"],
     "url": "https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-  }
+  },
+  {
+    "id": "orange_cookies",
+    "name": "Orange Cookies",
+    "tags": ["dessert", "cookies"],
+    "ingredients": ["unsalted_butter", "flour", "sugar", "eggs", "orange_juice", "oranges", "powdered_sugar",
+    "baking_powder" ],
+    "url": "https://preppykitchen.com/orange-cookies/#recipe"
+  },
 ];
 
 const DATA_INGREDIENTS = [
@@ -74,8 +82,12 @@ const DATA_INGREDIENTS = [
   { "id": "flour",         "name": "Flour" },
   { "id": "sugar",         "name": "Sugar" },
   { "id": "baking_powder", "name": "Baking Powder" },
-  { "id": "chocolate",     "name": "Chocolate Chips" },
-  { "id": "vanilla",       "name": "Vanilla Extract" }
+  { "id": "chocolate",       "name": "Chocolate Chips" },
+  { "id": "vanilla",         "name": "Vanilla Extract" },
+  { "id": "unsalted_butter", "name": "Unsalted Butter" },
+  { "id": "orange_juice",    "name": "Orange Juice" },
+  { "id": "oranges",         "name": "Oranges" },
+  { "id": "powdered_sugar",  "name": "Powdered Sugar" }
 ];
 
 const DATA_CONFIG = {
