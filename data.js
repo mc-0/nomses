@@ -1,40 +1,5 @@
 const DATA_RECIPES = [
   {
-    "id": "fried_rice",
-    "name": "Fried Rice",
-    "tags": ["asian", "quick", "vegetarian"],
-    "ingredients": ["rice", "eggs", "soy_sauce", "sesame_oil", "garlic", "green_onions"],
-    "url": ""
-  },
-  {
-    "id": "chicken_wraps",
-    "name": "Chicken Wraps",
-    "tags": ["quick", "meat"],
-    "ingredients": ["chicken_breast", "tortillas", "lettuce", "cheese", "salsa"],
-    "url": ""
-  },
-  {
-    "id": "spaghetti_bolognese",
-    "name": "Spaghetti Bolognese",
-    "tags": ["italian", "meat"],
-    "ingredients": ["pasta", "ground_beef", "tomato_sauce", "onion", "garlic", "olive_oil"],
-    "url": ""
-  },
-  {
-    "id": "tacos",
-    "name": "Tacos",
-    "tags": ["mexican", "meat", "quick"],
-    "ingredients": ["ground_beef", "tortillas", "cheese", "lettuce", "salsa", "sour_cream"],
-    "url": ""
-  },
-  {
-    "id": "veggie_stir_fry",
-    "name": "Veggie Stir Fry",
-    "tags": ["asian", "vegetarian", "quick"],
-    "ingredients": ["rice", "bell_pepper", "onion", "garlic", "soy_sauce", "sesame_oil"],
-    "url": ""
-  },
-  {
     "id": "black_bean_burritos",
     "name": "Black Bean Burritos",
     "tags": ["mexican", "vegetarian"],
@@ -52,11 +17,103 @@ const DATA_RECIPES = [
     "id": "orange_cookies",
     "name": "Orange Cookies",
     "tags": ["dessert", "cookies"],
-    "ingredients": ["unsalted_butter", "flour", "sugar", "eggs", "orange_juice", "oranges", "powdered_sugar",
-    "baking_powder" ],
+    "ingredients": ["unsalted_butter", "flour", "sugar", "eggs", "orange_juice", "oranges", "powdered_sugar", "baking_powder"],
     "url": "https://preppykitchen.com/orange-cookies/#recipe"
   },
+  {
+    "id": "lakmeh_banadora",
+    "name": "Lakmeh Banadora",
+    "tags": ["lebanese", "meat"],
+    "ingredients": ["ground_beef", "tomatoes", "tomato_sauce", "onion", "garlic", "olive_oil", "parsley"],
+    "url": ""
+  },
+  {
+    "id": "kafta_batata",
+    "name": "Kafta Batata",
+    "tags": ["lebanese", "meat"],
+    "ingredients": ["ground_beef", "potatoes", "onion", "garlic", "olive_oil", "parsley"],
+    "url": ""
+  },
+  {
+    "id": "tuna_casserole",
+    "name": "Tuna Casserole",
+    "tags": ["casserole", "seafood"],
+    "ingredients": ["tuna", "pasta", "cheese", "butter", "cream"],
+    "url": ""
+  },
+  {
+    "id": "quinoa_kale_salad",
+    "name": "Quinoa Kale Salad",
+    "tags": ["salad", "vegetarian"],
+    "ingredients": ["quinoa", "kale", "tomatoes", "cucumber", "olive_oil", "lemon_juice"],
+    "url": ""
+  },
+  {
+    "id": "leek_soup",
+    "name": "Leek Soup",
+    "tags": ["soup", "vegetarian"],
+    "ingredients": ["leeks", "potatoes", "onion", "butter", "cream", "broth"],
+    "url": ""
+  },
+  {
+    "id": "broccoli_cheddar_soup",
+    "name": "Broccoli Cheddar Soup",
+    "tags": ["soup", "vegetarian"],
+    "ingredients": ["broccoli", "cheese", "potatoes", "onion", "butter", "cream", "broth"],
+    "url": ""
+  },
+  {
+    "id": "fatoosh",
+    "name": "Fatoosh",
+    "tags": ["lebanese", "salad", "vegetarian"],
+    "ingredients": ["lettuce", "tomatoes", "cucumber", "radishes", "parsley", "mint", "sumac", "bread", "olive_oil", "lemon_juice", "garlic"],
+    "url": ""
+  },
+  {
+    "id": "hummus",
+    "name": "Hummus",
+    "tags": ["middle_eastern", "appetizer", "vegetarian"],
+    "ingredients": ["chickpeas", "tahini", "lemon_juice", "garlic", "olive_oil"],
+    "url": ""
+  },
+  {
+    "id": "falafal",
+    "name": "Falafal",
+    "tags": ["middle_eastern", "appetizer", "vegetarian"],
+    "ingredients": ["chickpeas", "onion", "garlic", "parsley", "cilantro", "flour"],
+    "url": ""
+  },
+  {
+    "id": "vegetable_lasagna",
+    "name": "Vegetable Lasagna",
+    "tags": ["italian", "vegetarian"],
+    "ingredients": ["pasta", "zucchini", "spinach", "bell_pepper", "tomatoes", "tomato_sauce", "cheese", "ricotta"],
+    "url": ""
+  },
+  {
+    "id": "fetteh",
+    "name": "Fetteh",
+    "tags": ["middle_eastern", "vegetarian"],
+    "ingredients": ["chickpeas", "bread", "yogurt", "tahini", "garlic", "lemon_juice"],
+    "url": ""
+  },
+  {
+    "id": "dal",
+    "name": "Dal",
+    "tags": ["indian", "vegetarian"],
+    "ingredients": ["lentils", "onion", "garlic", "ginger", "olive_oil", "tomatoes", "cumin"],
+    "url": ""
+  }
 ];
+
+// RECIPE TEMPLATE
+/*{
+  "id": "",
+    "name": "",
+    "tags": [""],
+    "ingredients": [""],
+    "url": ""
+},*/
 
 const DATA_INGREDIENTS = [
   { "id": "rice",           "name": "Rice" },
@@ -87,7 +144,33 @@ const DATA_INGREDIENTS = [
   { "id": "unsalted_butter", "name": "Unsalted Butter" },
   { "id": "orange_juice",    "name": "Orange Juice" },
   { "id": "oranges",         "name": "Oranges" },
-  { "id": "powdered_sugar",  "name": "Powdered Sugar" }
+  { "id": "powdered_sugar",  "name": "Powdered Sugar" },
+  { "id": "tomatoes",        "name": "Tomatoes" },
+  { "id": "potatoes",        "name": "Potatoes" },
+  { "id": "tuna",            "name": "Tuna" },
+  { "id": "butter",          "name": "Butter" },
+  { "id": "cream",           "name": "Heavy Cream" },
+  { "id": "broth",           "name": "Vegetable Broth" },
+  { "id": "quinoa",          "name": "Quinoa" },
+  { "id": "kale",            "name": "Kale" },
+  { "id": "cucumber",        "name": "Cucumber" },
+  { "id": "lemon_juice",     "name": "Lemon Juice" },
+  { "id": "leeks",           "name": "Leeks" },
+  { "id": "broccoli",        "name": "Broccoli" },
+  { "id": "radishes",        "name": "Radishes" },
+  { "id": "parsley",         "name": "Parsley" },
+  { "id": "mint",            "name": "Mint" },
+  { "id": "sumac",           "name": "Sumac" },
+  { "id": "chickpeas",       "name": "Chickpeas" },
+  { "id": "tahini",          "name": "Tahini" },
+  { "id": "cilantro",        "name": "Cilantro" },
+  { "id": "zucchini",        "name": "Zucchini" },
+  { "id": "spinach",         "name": "Spinach" },
+  { "id": "ricotta",         "name": "Ricotta Cheese" },
+  { "id": "yogurt",          "name": "Yogurt" },
+  { "id": "lentils",         "name": "Lentils" },
+  { "id": "ginger",          "name": "Ginger" },
+  { "id": "cumin",           "name": "Cumin" }
 ];
 
 const DATA_CONFIG = {
