@@ -4,6 +4,7 @@ let state = {
   ingredientMap: {},
   stores: [],
   selectedTags: new Set(),
+  selectedCategories: new Set(),  // new: for ingredient category filtering
   recipeSearch: '',
   ingSearch: '',
   cartRecipeIds: new Set(),   // recipes added to list
@@ -91,7 +92,7 @@ function switchView(name) {
   document.getElementById('header-subtitle').textContent = subtitles[name] || '';
 
   if (name === 'list') { buildListIngredients(); renderList(); }
-  if (name === 'ingredients') renderRegistry();
+  if (name === 'ingredients') { renderCategories(); renderRegistry(); }
 }
 
 // ── Render: Recipes ────────────────────────────────────────────────────────
@@ -213,9 +214,16 @@ function renderRegistry() {
   const container = document.getElementById('registry-list');
   container.innerHTML = '';
   const query = state.ingSearch;
-  const visible = [...state.ingredients]
-    .filter(i => !query || i.name.toLowerCase().includes(query))
-    .sort((a, b) => a.name.localeCompare(b.name));
+  let visible = [...state.ingredients]
+    .filter(i => !query || i.name.toLowerCase().includes(query));
+
+  // Filter by selected categories
+  if (state.selectedCategories.size > 0) {
+    visible = visible.filter(i => state.selectedCategories.has(i.category));
+  }
+
+  visible.sort((a, b) => a.name.localeCompare(b.name));
+
   visible.forEach(ing => {
     const row = document.createElement('div');
     row.className = 'registry-row';
@@ -234,6 +242,22 @@ function renderRegistry() {
   });
 }
 
+function renderCategories() {
+  const container = document.getElementById('category-list');
+  container.innerHTML = '';
+  getAllCategories().forEach(category => {
+    const label = document.createElement('label');
+    label.className = 'tag-chip' + (state.selectedCategories.has(category) ? ' active' : '');
+    label.innerHTML = `<input type="checkbox" value="${category}" ${state.selectedCategories.has(category) ? 'checked' : ''}>${category}`;
+    label.querySelector('input').addEventListener('change', e => {
+      if (e.target.checked) state.selectedCategories.add(category);
+      else state.selectedCategories.delete(category);
+      renderCategories();
+      renderRegistry();
+    });
+    container.appendChild(label);
+  });
+}
 
 // ── Wire up events ─────────────────────────────────────────────────────────
 
