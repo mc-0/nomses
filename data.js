@@ -405,7 +405,27 @@ const DATA_INGREDIENTS = [
   { "id": "latex_gloves",    "name": "Latex Gloves",    "category": "household" },
   { "id": "dish_sponges",    "name": "Dish Sponges",    "category": "household" },
   { "id": "parchment_paper", "name": "Parchment Paper", "category": "household" },
-  { "id": "ziplock_bags",    "name": "Ziplock Bags",    "category": "household" }
+  { "id": "ziplock_bags",          "name": "Ziplock Bags",              "category": "household" },
+  { "id": "aluminum_pans",         "name": "Aluminum Pans",             "category": "household" },
+  { "id": "white_cheddar_cheese",  "name": "White Cheddar Cheese",      "category": "dairy" },
+  { "id": "sharp_cheddar",         "name": "Sharp Cheddar Cheese",      "category": "dairy" },
+  { "id": "cream_cheese",          "name": "Cream Cheese",              "category": "dairy" },
+  { "id": "pepper_jack_cheese",    "name": "Pepper Jack Cheese Slices", "category": "dairy" },
+  { "id": "gouda_cheese",          "name": "Gouda Cheese Slices",       "category": "dairy" },
+  { "id": "provolone_cheese",      "name": "Provolone Cheese Slices",   "category": "dairy" },
+  { "id": "cool_whip",             "name": "Cool Whip",                 "category": "frozen" },
+  { "id": "birthday_cake_ice_cream", "name": "Birthday Cake Ice Cream", "category": "frozen" },
+  { "id": "strawberry_ice_cream",  "name": "Strawberry Ice Cream",      "category": "frozen" },
+  { "id": "marshmallow_fluff",     "name": "Marshmallow Fluff",         "category": "baking" },
+  { "id": "strawberry_wafers",     "name": "Strawberry Wafers",         "category": "baking" },
+  { "id": "golden_oreos",          "name": "Golden Oreos",              "category": "baking" },
+  { "id": "mini_chocolate_chips",  "name": "Mini Chocolate Chips",      "category": "baking" },
+  { "id": "chocolate_pudding",     "name": "Chocolate Pudding",         "category": "baking" },
+  { "id": "breadcrumbs",           "name": "Breadcrumbs",               "category": "baking" },
+  { "id": "peaches",               "name": "Peaches",                   "category": "produce" },
+  { "id": "coleslaw_mix",          "name": "Coleslaw Mix",              "category": "produce" },
+  { "id": "pickles",               "name": "Pickles",                   "category": "pantry" },
+
 ];
 
 const DATA_CONFIG = {
